@@ -16,8 +16,8 @@ chromium.use(StealthPlugin());
 
   const page = await context.newPage();
 
-  const MAX_FOLLOWS_PER_DAY = 1500;
-  const MAX_FOLLOWS_PER_HOUR = 500;
+  const MAX_FOLLOWS_PER_DAY = 150;
+  const MAX_FOLLOWS_PER_HOUR = 15;
 
   let dailyFollowCount = 0;
   let hourlyFollowCount = 0;
@@ -41,7 +41,7 @@ chromium.use(StealthPlugin());
     console.log('Logging in...');
     await page.goto('https://www.instagram.com/accounts/login/');
     await page.waitForSelector('input[name="username"]', { timeout: 240000 });
-    await page.fill('input[name="username"]', 'Miss_Sabaweli');
+    await page.fill('input[name="username"]', 'mistake2028');
     await page.fill('input[name="password"]', '2003207318192614');
     await page.click('button[type="submit"]');
     await page.waitForTimeout(12000);
