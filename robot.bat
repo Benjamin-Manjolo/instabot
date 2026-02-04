@@ -1,0 +1,1 @@
+node C:\Users\Benjamin\Desktop\git\playlight\bot.js &&
